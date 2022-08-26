@@ -1,3 +1,4 @@
+import 'package:audioplayer/firstVideoscreen.dart';
 import 'package:audioplayer/topscreen.dart';
 import 'package:flutter/material.dart';
 class TabBarview_Screen extends StatefulWidget {
@@ -11,51 +12,34 @@ class _TabBarview_ScreenState extends State<TabBarview_Screen> {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-        length: 6,
+        length: 2,
         child: SafeArea(
             child: Scaffold(
               appBar: AppBar(
                 title: Text(
-                  "MusicApp",
+                  "PlayBack",
                   style: TextStyle(fontSize: 30),
                 ),
-
-                centerTitle: false,
+                centerTitle: true,
                 bottom: TabBar(
                   indicatorColor: Colors.black,
                   indicatorSize: TabBarIndicatorSize.tab,
-                  isScrollable: true,
 
                   tabs: [
                     Tab(
-                      text: "For You",
+                      text: "Video",
                     ),
                     Tab(
-                      text: "Songs",
+                      text: "Audio",
                     ),
-                    Tab(
-                      text: "Playlists",
-                    ),
-                    Tab(
-                      text: "Folders",
-                    ),
-                    Tab(
-                      text: "Albums",
-                    ),
-                    Tab(
-                      text: "Artists",
-                    ),
+
 
                   ],
                 ),
               ),
               body: TabBarView(
                 children: [
-                  homescreen(),
-                  homescreen(),
-                  homescreen(),
-                  homescreen(),
-                  homescreen(),
+                  First_Screen(),
                   homescreen(),
                 ],
               ),

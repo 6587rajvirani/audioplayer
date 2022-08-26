@@ -123,7 +123,7 @@ class _first_ScreenState extends State<first_Screen> {
                     Icon(Icons.more_vert,color: Colors.white),
                     InkWell(onTap: (){
                       bottomsheetdilaog();
-                    },child: Icon(Icons.keyboard_arrow_up,color: Colors.white,size: 15,))
+                    },child: Icon(Icons.keyboard_arrow_up,color: Colors.white,size: 30,))
 
                   ],
                 ),
@@ -147,7 +147,7 @@ class _first_ScreenState extends State<first_Screen> {
                         children: [
                           Padding(
                             padding: const EdgeInsets.only(top: 3,left: 20,bottom: 6,right: 6),
-                            child: Text("${duration.inMinutes}:${duration.inSeconds}",style: TextStyle(color: Colors.white,fontSize: 15),),
+                            child: Text("${duration.inMinutes}:${duration.inSeconds>60?duration.inSeconds-60:duration.inSeconds}",style: TextStyle(color: Colors.white,fontSize: 15),),
                           ),
                           Padding(
                             padding: const EdgeInsets.only(top: 3,left: 20,bottom: 6,right: 6),
@@ -160,8 +160,6 @@ class _first_ScreenState extends State<first_Screen> {
                  }
                 ),
                  SizedBox(height: 20,),
-
-
                  Row(
                    mainAxisAlignment: MainAxisAlignment.spaceAround,
                    children: [
@@ -297,5 +295,4 @@ class _first_ScreenState extends State<first_Screen> {
      );
   }
   Widget halficon()=>Image.asset("assets/image/star.webp");
-
 }
