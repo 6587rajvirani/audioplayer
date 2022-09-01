@@ -1,5 +1,6 @@
 import 'package:assets_audio_player/assets_audio_player.dart';
-import 'package:audioplayer/topProvider.dart';
+import 'package:audioplayer/audio/topProvider.dart';
+import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
@@ -50,6 +51,7 @@ class _first_ScreenState extends State<first_Screen> {
           body: SingleChildScrollView(
             child: Column(
               children: [
+
                  Row(
                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [

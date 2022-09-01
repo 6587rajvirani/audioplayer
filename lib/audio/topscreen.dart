@@ -1,4 +1,4 @@
-import 'package:audioplayer/topProvider.dart';
+import 'package:audioplayer/audio/topProvider.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'model.dart';

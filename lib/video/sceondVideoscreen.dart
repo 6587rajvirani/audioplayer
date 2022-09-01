@@ -1,5 +1,5 @@
 
-import 'package:audioplayer/videoProviderScreen.dart';
+import 'package:audioplayer/video/videoProviderScreen.dart';
 import 'package:chewie/chewie.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';

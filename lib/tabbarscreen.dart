@@ -1,5 +1,5 @@
-import 'package:audioplayer/firstVideoscreen.dart';
-import 'package:audioplayer/topscreen.dart';
+import 'package:audioplayer/video/firstVideoscreen.dart';
+import 'package:audioplayer/audio/topscreen.dart';
 import 'package:flutter/material.dart';
 class TabBarview_Screen extends StatefulWidget {
   const TabBarview_Screen({Key? key}) : super(key: key);
