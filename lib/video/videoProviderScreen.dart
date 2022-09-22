@@ -5,10 +5,16 @@ import 'modalclass.dart';
 class main_provider extends ChangeNotifier{
 
   bool isplay = false;
+  dynamic i=0;
 
   void playpause()
   {
     isplay=!isplay;
+    notifyListeners();
+  }
+
+  void changsposition(dynamic index){
+    i=index;
     notifyListeners();
   }
 
@@ -26,16 +32,16 @@ class main_provider extends ChangeNotifier{
     Modeldata2(No:"351",CN: "State News",Crlbe: "25M Subscribres",Like:"10M",Date: "52M views . 1 month ago",Name2: "Nitin Gadkari’s jibe at poor qualit..", Sub2: "Nitin Gadkari’s jibe at poor quality roads, says ‘frequent Read more at",           Video: "assets/video/istockphoto-1286880293-640_adpp_is.mp4",                                 Image2: "assets/image/image10.jpeg"),
   ];
   List<Modeldata2>d1=[
-    Modeldata2(Image2: "assets/image/image10.jpeg"),
-    Modeldata2(Image2: "assets/image/image9.jpeg"),
-    Modeldata2(Image2: "assets/image/image8.jpeg"),
-    Modeldata2(Image2: "assets/image/image7.jpeg"),
-    Modeldata2(Image2: "assets/image/image6.jpeg"),
-    Modeldata2(Image2: "assets/image/image5.jpeg"),
-    Modeldata2(Image2: "assets/image/image4.jpeg"),
-    Modeldata2(Image2: "assets/image/image3.jpeg"),
-    Modeldata2(Image2: "assets/image/image2.jpeg"),
-    Modeldata2(Image2: "assets/image/image1.jpeg"),
+    Modeldata2(Image2: "assets/image/image10.jpeg",CN:"State News" ),
+    Modeldata2(Image2: "assets/image/image9.jpeg",CN:"E-Market" ),
+    Modeldata2(Image2: "assets/image/image8.jpeg",CN:"Ocean News" ),
+    Modeldata2(Image2: "assets/image/image7.jpeg",CN:"News channel" ),
+    Modeldata2(Image2: "assets/image/image6.jpeg",CN:"Tree Channel" ),
+    Modeldata2(Image2: "assets/image/image5.jpeg",CN:"baseball News" ),
+    Modeldata2(Image2: "assets/image/image4.jpeg",CN: "Cricket  News"),
+    Modeldata2(Image2: "assets/image/image3.jpeg",CN: "Football News"),
+    Modeldata2(Image2: "assets/image/image2.jpeg",CN:"Share UP" ),
+    Modeldata2(Image2: "assets/image/image1.jpeg",CN: "L Car" ),
   ];
 
 
